@@ -1,0 +1,17 @@
+<h1>Hey Everyone!</h1>
+<p>Please login to view some posts.</p>
+
+<h1>Posts</h1>
+
+<table>
+	<tr>
+		<th>
+			{% for post in object_list %}
+				{{ post.title }}
+				{{ post.author }}
+				{{ post.content }}
+			{% endfor %}			
+		</th>
+	</tr>
+</table>
+
